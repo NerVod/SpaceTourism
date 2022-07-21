@@ -1,0 +1,61 @@
+.upperBandContainer{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logoSpaceTour{
+    height: 40px;
+    margin: 25px;
+}
+
+.logoBurger{
+    height: 25px;
+    width: 25px;
+    margin: 25px;
+}
+
+.navMenu {
+    display: flex;
+    background-color: rgba(0,0,0,0.3) ;
+    backdrop-filter: blur(10px);
+    height: 80px;
+    align-items: center;
+    
+}
+
+.navMenu > ul, .navMenuDesk > ul{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    color: azure;
+    list-style-type: none;
+}
+
+
+ul > li {
+    margin-right: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size:small;
+}
+
+.navMenuDesk {
+    display: flex;
+    background-color: rgba(0,0,0,0.3) ;
+    backdrop-filter: blur(10px);
+    height: 80px;
+    align-items: center;
+    width: 60%;
+}
+.navMenuDesk > ul > li {
+    margin-right: 30px;
+}
+
+.dash {
+    width: 60%;
+    border-bottom: 1px solid azure;
+    transform: translateX(-90%);
+    position: absolute
+}

@@ -1,0 +1,22 @@
+<div class="upperBandContainer">
+    <img class="logoSpaceTour" src="../../assets/shared/logo.svg" alt="logo spaceTourism">
+    <!-- <p style="color: white ;">windowWidth : {{getScreenWidth}}</p> -->
+    <img class="logoBurger" *ngIf="getScreenWidth <= 480" src="../../assets/shared/icon-hamburger.svg" alt="logo Burger">
+    <div class="navMenu" *ngIf="getScreenWidth > 480 && getScreenWidth < 1024" >
+        <ul>
+            <li>HOME</li>
+            <li>DESTINATION</li>
+            <li>CREW</li>
+            <li>TECHNOLOGY</li>
+        </ul>
+    </div>
+    <div class="navMenuDesk" *ngIf="getScreenWidth >= 1024 " >
+        <div class="dash"></div>
+        <ul>
+            <li><strong>01</strong> HOME</li>
+            <li><strong>02</strong> DESTINATION</li>
+            <li><strong>03</strong> CREW</li>
+            <li><strong>04</strong> TECHNOLOGY</li>
+        </ul>
+    </div>
+</div>
