@@ -4,8 +4,8 @@
     <img class="logoBurger" *ngIf="getScreenWidth <= 480" src="../../assets/shared/icon-hamburger.svg" alt="logo Burger">
     <div class="navMenu" *ngIf="getScreenWidth > 480 && getScreenWidth < 1024" >
         <ul>
-            <li>HOME</li>
-            <li>DESTINATION</li>
+            <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">HOME</a></li>
+            <li><a routerLink="/destination" routerLinkActive="active">DESTINATION</a></li>
             <li>CREW</li>
             <li>TECHNOLOGY</li>
         </ul>
@@ -13,10 +13,10 @@
     <div class="navMenuDesk" *ngIf="getScreenWidth >= 1024 " >
         <div class="dash"></div>
         <ul>
-            <li><strong>01</strong> HOME</li>
-            <li><strong>02</strong> DESTINATION</li>
-            <li><strong>03</strong> CREW</li>
-            <li><strong>04</strong> TECHNOLOGY</li>
+            <li><a routerLink="" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}"><span class="numbers">00</span> HOME</a></li>
+            <li><a routerLink="/destination" routerLinkActive="active"><span class="numbers">01</span> DESTINATION</a></li>
+            <li><span class="numbers">02</span> CREW</li>
+            <li><span class="numbers">03</span> TECHNOLOGY</li>
         </ul>
     </div>
 </div>

@@ -40,10 +40,12 @@ app-nav {
 }
 .headline {
     text-transform: uppercase;
+    font-family: barlow;
+    color: hsl(231, 77, 90);
     @media (min-width: 769px) {
         letter-spacing: 3px;
-        font-size: 26px;
-        width: 60%;
+        font-size: 28px;
+        width: 50%;
         text-align: left;
         display: inline-block;
     }
@@ -57,10 +59,9 @@ app-nav {
 }
 
 .largeText{
-    color: rgba(240, 255, 255, 0.995);
     text-transform: uppercase;
     @media (min-width: 769px) {
-        font-size: 190px;
+        font-size: 150px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
@@ -74,18 +75,20 @@ app-nav {
     }
 }
 .centerParag{
+    color: hsl(231, 77, 90);
+    font-family: barlow;
+    font-size: 14px;
+    letter-spacing: 2.35px;
     @media (min-width: 769px) {
-        width: 60%;
+        width: 50%;
         display: inline-block;
-        font-size: larger;
-        margin: 35px;
+        margin: 15px;
         line-height: 40px;
         text-align: left;
     }
     @media (max-width: 768px) {
-        width: 55%;
+        width: 50%;
         display: inline-block;
-        font-size: medium;
         margin: 20px;
         margin-bottom: 140px;
         line-height: 30px;

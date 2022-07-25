@@ -17,9 +17,8 @@
 
 .navMenu {
     display: flex;
-    background-color: rgba(0,0,0,0.2) ;
-    backdrop-filter: blur(15px);
-    height: 100px;
+    background-color: hsl(230, 35, 7) ;
+    height: 80px;
     align-items: center;
     width: 65%;
     
@@ -29,23 +28,28 @@
     display: flex;
     justify-content: space-around;
     margin: auto;
-    color: azure;
     list-style-type: none;
 }
 
 
-ul > li {
-    margin-right: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    letter-spacing: 2px;
-    font-weight: 100;
-    font-size:small;
+ul > li  {
+    margin-right: 25px;
+    letter-spacing: 2.35px;
+    font-size:14px;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0, 100);
+}
+.numbers{
+    color: hsl(0, 0, 100);
+    font-weight: 900;
 }
 
 .navMenuDesk {
     display: flex;
-    background-color: rgba(0,0,0,0.3) ;
-    backdrop-filter: blur(10px);
+    background-color: hsl(230, 35, 7) ;
     height: 80px;
     align-items: center;
     width: 60%;
@@ -56,7 +60,12 @@ ul > li {
 
 .dash {
     width: 60%;
-    border-bottom: 1px solid azure;
+    border-bottom: 1px solid hsl(0, 0, 100);
     transform: translateX(-90%);
     position: absolute
+}
+
+.active {
+    padding-bottom: 28px;
+    border-bottom: 2px solid rgba(240, 255, 255, 1);
 }
