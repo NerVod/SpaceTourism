@@ -16,6 +16,12 @@
     }
 }
 
+.deskBloc {
+    @media (min-width: 769px) {
+        display: flex;
+    }
+}
+
 .planetBloc{
     width: 100%;
     display: flex;
@@ -23,6 +29,12 @@
     @media (max-width: 480px) {
         align-items: center;
     }
+    @media (min-width: 769px) {
+        min-height: 800px;
+        height: 90vh;
+        justify-content: space-around;
+    }
+
 }
 
 .number{
@@ -35,11 +47,33 @@
     font-family: barlow;
     margin-left: 25px;
     margin-bottom: 30px;
+    @media ( max-width: 480px) { 
+        margin-left: 5px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    @media (min-width: 769px) {
+        font-size: 32px;
+        margin-left: 120px;
+    }
 }
 
 .imagePlanet{
-    width: 100%;
+    width: 70%;
     display: flex;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @media ( max-width: 480px) { 
+        width: 70%;
+        margin-top: 15px;
+        margin-bottom: 15px;        
+    }
+    @media (min-width: 769px) {
+        width:800px;
+        margin-bottom: 190px;
+
+    }
 
 }
 
@@ -48,13 +82,40 @@ img {
     margin: auto;
 }
 .planetNav{
-    width: 70%;
     margin: auto;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+        @media (min-width: 769px) {
+        width: 100%;
+        justify-content: left;
+        }
+    
+}
+.planetNav>ul >li {
+    @media (max-width: 480px) {
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    @media (min-width: 769px) {
+    margin-left: 20px;
+    margin-right: 20px;
+    }
     
 }
 
 .textBloc {
     width: 100%;
+    @media (min-width: 769px) {
+        border: 1px solid yellow;
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        min-height:700px;
+        height: 85vh;
+    }
 }
 .planetNav ul{
     display: flex;
@@ -63,11 +124,10 @@ img {
     list-style-type: none;
     text-transform: uppercase;
     color: hsl(231,77, 90);
-
 }
-.planetNav > li {
-    margin: auto;
-}
+// .planetNav > li {
+//     margin: auto;
+// }
 
 .planetName {
     text-transform: uppercase;
@@ -75,11 +135,19 @@ img {
     @media (max-width: 768px) {
         justify-content: center;
         font-size: 56px;
-        
     }
     @media (max-width: 480px) {
         font-size: 42px;
-        
+    }
+    @media (min-width: 769px) {
+        font-size: 100px;
+    }
+}
+
+.planetName >p {
+    margin: 10px;
+    @media (max-width: 480px) {
+        margin-top: 0;    
     }
 }
 
@@ -91,16 +159,30 @@ img {
     letter-spacing: 2.34px;
     line-height: 24px;
     text-align: center;
-    width: 100%;
+    width: 70%;
+    margin: auto;
+    @media ( max-width: 480px) { 
+        font-size: 16px;
+    }
+    @media (min-width: 769px) {
+        width: 100%;
+        border: 1px solid green;
+    }
 }
 .textPlanet > p {
-    margin: 15px
+    margin-bottom: 40px;
+    @media (min-width: 769px) {
+        border: 1px solid greenyellow;
+        width: 70%;
+        text-align: left;
+    }
 }
 
 .dash {
-    width: 90%;
+    width: 80%;
     border-bottom: 1px solid hsl(0, 0, 75);
-    margin: auto;  
+    margin: auto;
+    margin-bottom: 20px;  
 }
 
 .distanceBloc {
@@ -109,16 +191,35 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media ( max-width: 480px) {
+    padding: 3px;
+    }
 }
 
 .distTitle {
     color: hsl(231,77, 90);
     font-size: 14px;
+    @media ( max-width: 480px) {
+        padding: 0;
+        }
+}
+.distTitle > p {
+    @media ( max-width: 480px) {
+        margin-top: 10px;
+        margin-bottom: 0;
+        }   
 }
 .distance {
     text-transform: uppercase;
     font-size: 24px;
 }
+.distance > p{
+    @media ( max-width: 480px) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
 
 .travelBloc{
     text-transform: uppercase;
@@ -126,14 +227,45 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+        @media ( max-width: 480px) {
+        padding: 3px;
+        margin-bottom: 30px;
+        }
 }
 
 .travelTitle {
     color: hsl(231,77, 90);
     font-size: 14px;   
 }
+.travelTitle p {
+    @media ( max-width: 480px) {
+        margin-bottom: 0;
+    }
+}
 
 .travel {
     text-transform: uppercase;
     font-size: 24px;
+}
+.travel p {
+    @media ( max-width: 480px) {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+.info{
+    display: flex;
+    @media ( max-width: 768px) { 
+        justify-content: space-around;
+        margin: 20px;
+    }
+    @media ( max-width: 480px) { 
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 1px;
+    }
+
+
 }
