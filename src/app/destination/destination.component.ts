@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { DestinationService } from '../services/destination.service';
 
 @Component({
   selector: 'app-destination',
@@ -8,12 +9,22 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DestinationComponent implements OnInit {
 
+  survolMoon!: boolean;
+  survolMars!: boolean;
+  survolEuropa!: boolean;
+  survolTitan!: boolean;
+
+  dataPlanet$: any
+
   constructor(
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router,
+    private destinationService: DestinationService,
   ) { }
 
   ngOnInit(): void {
-    const destinationId = this.route.snapshot.params['id']
+    const destinationId = this.route.snapshot.params['id'];
+    this.dataPlanet$ = this.destinationService.getPlanet('moon').subscribe()
   }
 
 }

@@ -11,10 +11,10 @@
         <div class="textBloc">
             <nav class="planetNav">
                 <ul>
-                    <li>Moon</li>
-                    <li>Mars</li>
-                    <li>Europa</li>
-                    <li>Titan</li>
+                    <li (mouseover)="this.survolMoon=true" (mouseout)="this.survolMoon= false" [ngClass]="{survol: survolMoon}">Moon</li>
+                    <li (mouseover)="this.survolMars=true" (mouseout)="this.survolMars= false" [ngClass]="{survol: survolMars}">Mars</li>
+                    <li (mouseover)="this.survolEuropa=true" (mouseout)="this.survolEuropa= false" [ngClass]="{survol: survolEuropa}">Europa</li>
+                    <li (mouseover)="this.survolTitan=true" (mouseout)="this.survolTitan= false" [ngClass]="{survol: survolTitan}">Titan</li>
                 </ul>
             </nav>
             <div class="planetName">
