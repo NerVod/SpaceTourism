@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router'
 
@@ -10,7 +11,9 @@ export class NavComponent implements OnInit {
 
   public getScreenWidth: any;
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    ) { }
 
   ngOnInit(): void {
     this.getScreenWidth = window.innerWidth
