@@ -11,6 +11,8 @@ app.use(express.json());
 
 app.use("/destination", userRoutes);
 
+require("./database/db")(app)
+
 app.get('/', (req, res) => {
     console.log("Bien sur les routes backend !")
 });
