@@ -11,7 +11,7 @@ export class DestinationService {
   constructor(private http: HttpClient) { }
 
   getPlanet(planet:string):Observable<any> {
-    console.log(`adresse envoi requête : ${environment.baseURL}/destination/${planet}`)
+    // console.log(`adresse envoi requête : ${environment.baseURL}/destination/${planet}`)
     return this.http.get(`${environment.baseURL}/destination/${planet}`)
   }
 

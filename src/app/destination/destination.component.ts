@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DestinationService } from '../services/destination.service';
 
@@ -14,7 +14,7 @@ export class DestinationComponent implements OnInit {
   survolEuropa!: boolean;
   survolTitan!: boolean;
 
-  dataPlanet$: any
+  @Input() dataPlanet$: any
 
   constructor(
     private route: ActivatedRoute,
@@ -24,7 +24,22 @@ export class DestinationComponent implements OnInit {
 
   ngOnInit(): void {
     const destinationId = this.route.snapshot.params['id'];
-    this.dataPlanet$ = this.destinationService.getPlanet('moon').subscribe()
+  // this.destinationService.getPlanet('moon').subscribe((data: object) => this.dataPlanet$ = data)
+  this.getMoon()
   }
+
+getMoon(): void {
+  this.destinationService.getPlanet('moon').subscribe((data: object) => this.dataPlanet$ = data)
+}
+getMars(): void {
+  this.destinationService.getPlanet('mars').subscribe((data: object) => this.dataPlanet$ = data)
+}
+getEuropa(): void {
+  this.destinationService.getPlanet('europa').subscribe((data: object) => this.dataPlanet$ = data)
+}
+getTitan(): void {
+  this.destinationService.getPlanet('titan').subscribe((data: object) => this.dataPlanet$ = data)
+}
+
 
 }
