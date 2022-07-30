@@ -41,7 +41,7 @@ app-nav {
 .headline {
     text-transform: uppercase;
     font-family: barlow;
-    color: hsl(231, 77, 90);
+    color: hsl(231, 77%, 90%);
     @media (min-width: 769px) {
         letter-spacing: 3px;
         font-size: 28px;
@@ -75,7 +75,7 @@ app-nav {
     }
 }
 .centerParag{
-    color: hsl(231, 77, 90);
+    color: hsl(231, 77%, 90%);
     font-family: barlow;
     font-size: 14px;
     letter-spacing: 2.35px;

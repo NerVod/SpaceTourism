@@ -17,7 +17,7 @@
 
 .navMenu {
     display: flex;
-    background-color: hsl(230, 35, 7) ;
+    background-color: hsl(230, 35%, 7%) ;
     height: 80px;
     align-items: center;
     width: 65%;
@@ -40,16 +40,16 @@ ul > li  {
 
 a {
     text-decoration: none;
-    color: hsl(0, 0, 100);
+    color: hsl(0, 0%, 100%);
 }
 .numbers{
-    color: hsl(0, 0, 100);
+    color: hsl(0, 0%, 100%);
     font-weight: 900;
 }
 
 .navMenuDesk {
     display: flex;
-    background-color: hsl(230, 35, 7) ;
+    background-color: hsl(230, 35%, 7%) ;
     height: 80px;
     align-items: center;
     width: 60%;
@@ -60,7 +60,7 @@ a {
 
 .dash {
     width: 35%;
-    border-bottom: 1px solid hsl(0, 0, 100);
+    border-bottom: 1px solid hsl(0, 0%, 100%);
     transform: translateX(-90%);
     position: absolute
 }

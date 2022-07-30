@@ -101,7 +101,7 @@ img {
     padding: 3px;
     list-style-type: none;
     text-transform: uppercase;
-    color: hsl(231,77, 90);
+    color: hsl(231,77%, 90%);
     @media ( max-width: 768px) { 
         width: 100%;
         justify-content: center;
@@ -163,7 +163,7 @@ img {
 .textPlanet {
     display: flex;
     justify-content: center;
-    color: hsl(231,77, 90);
+    color: hsl(231,77%, 90%);
     font-family: barlow;
     letter-spacing: 2.34px;
     line-height: 24px;
@@ -194,7 +194,7 @@ img {
 
 .dash {
     width: 80%;
-    border-bottom: 1px solid hsl(0, 0, 75);
+    border-bottom: 1px solid hsl(0, 0%, 75%);
     margin: auto;
     margin-bottom: 20px; 
     @media (min-width: 769px) {
@@ -222,7 +222,7 @@ img {
 }
 
 .distTitle {
-    color: hsl(231,77, 90);
+    color: hsl(231,77%, 90%);
     font-size: 14px;
     @media ( max-width: 480px) {
         padding: 0;
@@ -264,7 +264,7 @@ img {
 }
 
 .travelTitle {
-    color: hsl(231,77, 90);
+    color: hsl(231,77%, 90%);
     font-size: 14px;   
 }
 .travelTitle p {
@@ -299,5 +299,5 @@ img {
 
 .survol {
     cursor: pointer;
-    color: hsl(0, 0, 75);
+    color: hsl(0, 0%, 75%);
 }
