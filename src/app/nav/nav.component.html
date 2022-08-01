@@ -6,8 +6,8 @@
         <ul>
             <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">HOME</a></li>
             <li><a routerLink="/destination" routerLinkActive="active">DESTINATION</a></li>
-            <li>CREW</li>
-            <li>TECHNOLOGY</li>
+            <li><a routerLink="/crew" routerLinkActive="active">CREW</a></li>
+            <li><a routerLink="/technology" routerLinkActive="active">TECHNOLOGY</a></li>
         </ul>
     </div>
     <div class="navMenuDesk" *ngIf="getScreenWidth >= 1024 " >
@@ -15,8 +15,8 @@
         <ul>
             <li><a routerLink="" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}"><span class="numbers">00</span> HOME</a></li>
             <li><a routerLink="/destination" routerLinkActive="active"><span class="numbers">01</span> DESTINATION</a></li>
-            <li><span class="numbers">02</span> CREW</li>
-            <li><span class="numbers">03</span> TECHNOLOGY</li>
+            <li><a routerLink="/crew" routerLinkActive="active"><span class="numbers">02</span> CREW</a></li>
+            <li><a routerLink="/technology" routerLinkActive="active"><span class="numbers">03</span> TECHNOLOGY</a></li>
         </ul>
     </div>
 </div>

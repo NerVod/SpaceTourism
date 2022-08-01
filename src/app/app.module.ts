@@ -7,13 +7,17 @@ import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { DestinationComponent } from './destination/destination.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CrewComponent } from './crew/crew.component';
+import { TechnologyComponent } from './technology/technology.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavComponent,
-    DestinationComponent
+    DestinationComponent,
+    CrewComponent,
+    TechnologyComponent
   ],
   imports: [
     BrowserModule,
