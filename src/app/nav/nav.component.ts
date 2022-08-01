@@ -10,18 +10,24 @@ import { Router } from '@angular/router'
 export class NavComponent implements OnInit {
 
   public getScreenWidth: any;
+  navmodal!: boolean
 
   constructor(
     private router: Router,
     ) { }
 
   ngOnInit(): void {
-    this.getScreenWidth = window.innerWidth
+    this.getScreenWidth = window.innerWidth;
+    this.navmodal = false
   }
 
   @HostListener("window:resize", ['$event'])
   onWindowResize() {
     this.getScreenWidth = window.innerWidth
+  }
+
+  showModal() {
+    this.navmodal = !this.navmodal
   }
 
 }

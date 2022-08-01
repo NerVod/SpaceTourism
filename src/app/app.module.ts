@@ -9,6 +9,7 @@ import { DestinationComponent } from './destination/destination.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CrewComponent } from './crew/crew.component';
 import { TechnologyComponent } from './technology/technology.component';
+import { NavModalComponent } from './nav-modal/nav-modal.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TechnologyComponent } from './technology/technology.component';
     NavComponent,
     DestinationComponent,
     CrewComponent,
-    TechnologyComponent
+    TechnologyComponent,
+    NavModalComponent
   ],
   imports: [
     BrowserModule,

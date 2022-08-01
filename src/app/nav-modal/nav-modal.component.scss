@@ -1,0 +1,23 @@
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+line-height: 48px;
+height: 100%;
+font-family: barlow;
+
+}
+.container ul {
+    list-style-type: none;
+    margin-bottom: 200px;
+}
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+.numbers{
+    color: hsl(0, 0%, 100%);
+    font-weight: 900;
+    margin-right: 5px;
+}
