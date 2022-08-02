@@ -30,11 +30,11 @@ app-nav {
     text-align: center;
     @media (max-width: 768px) {
         font-size: medium;
-        margin-top: -75px;
+        margin-top: 75px;
     }
     @media (max-width: 480px) {
         font-size: small;
-        margin-top: -75px;
+        margin-top: 45px;
     }
     @media (min-width: 769px) {
         width: 50%;
