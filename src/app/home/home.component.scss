@@ -195,7 +195,7 @@ a {
         align-items: center;
         padding-top: 4%;
     }
-    @media (min-width: 480px) {
+    @media (max-width: 480px) {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
