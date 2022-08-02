@@ -11,10 +11,10 @@
         <div class="textBloc">
             <nav class="planetNav">
                 <ul>
-                    <li (mouseover)="this.survolMoon=true" (mouseout)="this.survolMoon= false" [ngClass]="{survol: survolMoon}" (click)="getMoon()">Moon</li>
-                    <li (mouseover)="this.survolMars=true" (mouseout)="this.survolMars= false" [ngClass]="{survol: survolMars}" (click)="getMars()">Mars</li>
-                    <li (mouseover)="this.survolEuropa=true" (mouseout)="this.survolEuropa= false" [ngClass]="{survol: survolEuropa}" (click)="getEuropa()">Europa</li>
-                    <li (mouseover)="this.survolTitan=true" (mouseout)="this.survolTitan= false" [ngClass]="{survol: survolTitan}" (click)="getTitan()">Titan</li>
+                    <li (mouseover)="this.survolMoon=true" (mouseout)="this.survolMoon= false" [ngClass]="{survol: survolMoon, pickedDestination: selectMoon}" (click)="getMoon()">Moon</li>
+                    <li (mouseover)="this.survolMars=true" (mouseout)="this.survolMars= false" [ngClass]="{survol: survolMars, pickedDestination: selectMars}" (click)="getMars()">Mars</li>
+                    <li (mouseover)="this.survolEuropa=true" (mouseout)="this.survolEuropa= false" [ngClass]="{survol: survolEuropa, pickedDestination: selectEuropa}" (click)="getEuropa()">Europa</li>
+                    <li (mouseover)="this.survolTitan=true" (mouseout)="this.survolTitan= false" [ngClass]="{survol: survolTitan, pickedDestination: selectTitan}" (click)="getTitan()">Titan</li>
                 </ul>
             </nav>
             <div class="planetName">

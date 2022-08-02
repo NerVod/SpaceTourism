@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  circleHover!: boolean
+
   constructor() { }
 
   ngOnInit(): void {
+    this.circleHover = false
   }
 
 }

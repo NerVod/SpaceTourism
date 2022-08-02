@@ -13,6 +13,9 @@
     background-image: url(../../assets/home/background-home-desktop.jpg);
     @media (max-width: 480px) {
         background-image: url(../../assets/home/background-home-mobile.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
 
     }
 }
@@ -95,7 +98,7 @@ app-nav {
     }
     @media (max-width: 480px) {
         margin: 20px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         line-height: 24px;
     }
 }
@@ -117,25 +120,26 @@ app-nav {
 }
 
 .circle{
+    // border: 60px solid transparent;
     background-color:whitesmoke;
     border-radius: 50% 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
     @media (min-width: 769px) {
-        height: 260px;
-        width: 260px;
+        height: 210px;
+        width: 210px;
     }
     @media (max-width: 768px) {
-        height: 200px;
-        width: 200px;
+        height: 170px;
+        width: 170px;
     }
     @media (max-width: 480px) {
         height: 120px;
         width: 120px;
     }
-
+    
 }
 
 .circleText{
@@ -150,8 +154,37 @@ app-nav {
     @media (max-width: 480px) {
         font-size: 20px;
     }
+    
+}
+.circleBorder{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% 50%;
+    @media (min-width: 769px) {
+        height: 330px;
+        width: 330px;
+    }
+    @media (max-width: 768px) {
+        height: 250px;
+        width: 250px;
+    }
+    @media (max-width: 480px) {
+        height: 150px;
+        width: 150px;
+    }
 
 }
+
+.circleHover {
+    background-color: rgb(53, 51, 67);
+}
+
+a {
+    text-decoration: none;
+}
+
 
 .dektopContainer {
     @media (min-width: 769px) {
@@ -162,4 +195,12 @@ app-nav {
         align-items: center;
         padding-top: 4%;
     }
+    @media (min-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 667px;
+        height: 85vh;
+    }
+
 }
