@@ -18,12 +18,9 @@
         </div>
         <div class="bulletNav">
             <div class="bullet" (mouseenter)="this.survol1= true" (mouseleave)="this.survol1 = false" [ngClass]="{bulletHover: survol1, bulletSelected: select1 }" (click)="getCommander()"></div>
-            <div class="bullet" (mouseenter)="this.survol4= true" (mouseleave)="this.survol4 = false" [ngClass]="{bulletHover: survol4, bulletSelected: select4}" (click)="getEngeneer()"></div>
-    
-    
-            <div class="bullet" (mouseenter)="this.survol3= true" (mouseleave)="this.survol3 = false" [ngClass]="{bulletHover: survol3, bulletSelected: select3 }" (click)="getPilot()"></div>
-    
             <div class="bullet" (mouseenter)="this.survol2= true" (mouseleave)="this.survol2 = false" [ngClass]="{bulletHover: survol2, bulletSelected: select2}" (click)="getSpecialist()"></div>
+            <div class="bullet" (mouseenter)="this.survol3= true" (mouseleave)="this.survol3 = false" [ngClass]="{bulletHover: survol3, bulletSelected: select3 }" (click)="getPilot()"></div>
+            <div class="bullet" (mouseenter)="this.survol4= true" (mouseleave)="this.survol4 = false" [ngClass]="{bulletHover: survol4, bulletSelected: select4}" (click)="getEngeneer()"></div>
         </div>
         <div class="blocInfo">
             <div class="role">{{dataCrew$.role}}</div>
