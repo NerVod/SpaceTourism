@@ -69,3 +69,13 @@ exports.getTitan = async (req, res) => {
         console.log('erreur catch get data titan')
     }
 }
+
+exports.warmup = async (req, res) => {
+    try {
+        console.log("warming up backend server")
+        res.json({warmserver: "success"})
+    }
+    catch {
+        console.log('no warmingup server')
+    }
+}

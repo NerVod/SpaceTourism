@@ -10,6 +10,7 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
 app.use("/destination", userRoutes);
+app.use("/warm", userRoutes)
 
 require("./database/db")(app)
 

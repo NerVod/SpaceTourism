@@ -15,7 +15,9 @@ export class DestinationService {
     return this.http.get(`${environment.baseURL}/destination/${planet}`)
   }
 
-
+warmHeroku() {
+  return this.http.get(`${environment.baseURL}/warm/warmup`)
+}
 
 
 
