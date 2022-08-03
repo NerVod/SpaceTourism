@@ -9,8 +9,9 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
-app.use("/destination", userRoutes);
 app.use("/warm", userRoutes)
+app.use("/destination", userRoutes);
+app.use("/crew", userRoutes)
 
 require("./database/db")(app)
 
