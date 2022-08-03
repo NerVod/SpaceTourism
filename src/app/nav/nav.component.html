@@ -6,19 +6,19 @@
     <img class="closeButton" *ngIf="navmodal" (click)="showModal()" src="../../assets/shared/icon-close.svg" alt="close button">
     <div class="navMenu" *ngIf="getScreenWidth > 480 && getScreenWidth < 1024" >
         <ul>
-            <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">HOME</a></li>
-            <li><a routerLink="/destination" routerLinkActive="active">DESTINATION</a></li>
-            <li><a routerLink="/crew" routerLinkActive="active">CREW</a></li>
-            <li><a routerLink="/technology" routerLinkActive="active">TECHNOLOGY</a></li>
+            <li><a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (mouseenter)="this.survol1 = true" (mouseleave)="this.survol1 = false" [ngClass]="{hovered : survol1}">HOME</a></li>
+            <li><a routerLink="/destination" routerLinkActive="active" (mouseenter)="this.survol2 = true" (mouseleave)="this.survol2 = false" [ngClass]="{hovered : survol2}">DESTINATION</a></li>
+            <li><a routerLink="/crew" routerLinkActive="active" (mouseenter)="this.survol3 = true" (mouseleave)="this.survol3 = false" [ngClass]="{hovered : survol3}">CREW</a></li>
+            <li><a routerLink="/technology" routerLinkActive="active" (mouseenter)="this.survol4 = true" (mouseleave)="this.survol4 = false" [ngClass]="{hovered : survol4}">TECHNOLOGY</a></li>
         </ul>
     </div>
     <div class="navMenuDesk" *ngIf="getScreenWidth >= 1024 " >
         <div class="dash"></div>
         <ul>
-            <li><a routerLink="" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}"><span class="numbers">00</span> HOME</a></li>
-            <li><a routerLink="/destination" routerLinkActive="active"><span class="numbers">01</span> DESTINATION</a></li>
-            <li><a routerLink="/crew" routerLinkActive="active"><span class="numbers">02</span> CREW</a></li>
-            <li><a routerLink="/technology" routerLinkActive="active"><span class="numbers">03</span> TECHNOLOGY</a></li>
+            <li><a routerLink="" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" (mouseenter)="this.survol1 = true" (mouseleave)="this.survol1 = false" [ngClass]="{hovered : survol1}"><span class="numbers">00</span> HOME</a></li>
+            <li><a routerLink="/destination" routerLinkActive="active" (mouseenter)="this.survol2 = true" (mouseleave)="this.survol2 = false" [ngClass]="{hovered : survol2}"><span class="numbers">01</span> DESTINATION</a></li>
+            <li><a routerLink="/crew" routerLinkActive="active" (mouseenter)="this.survol3 = true" (mouseleave)="this.survol3 = false" [ngClass]="{hovered : survol3}"><span class="numbers">02</span> CREW</a></li>
+            <li><a routerLink="/technology" routerLinkActive="active" (mouseenter)="this.survol4 = true" (mouseleave)="this.survol4 = false" [ngClass]="{hovered : survol4}"><span class="numbers">03</span> TECHNOLOGY</a></li>
         </ul>
     </div>
 </div>

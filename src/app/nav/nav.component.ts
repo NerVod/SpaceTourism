@@ -10,7 +10,11 @@ import { Router } from '@angular/router'
 export class NavComponent implements OnInit {
 
   public getScreenWidth: any;
-  navmodal!: boolean
+  navmodal!: boolean;
+  survol1!: boolean;
+  survol2!: boolean;
+  survol3!: boolean;
+  survol4!: boolean;
 
   constructor(
     private router: Router,
