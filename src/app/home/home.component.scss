@@ -3,7 +3,11 @@
     width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../../assets/home/background-home-tablet.jpg);
+    background-image: url(../../assets/home/background-home-desktop.jpg);
+    @media (min-width: 769px){
+        min-height: 1224px;
+        min-width: 1200px;
+    }
     @media (max-width: 768px) {
         background-image: url(../../assets/home/background-home-tablet.jpg);
         display: flex;
@@ -11,7 +15,6 @@
         justify-content: space-between;
         min-height: 1024px;
     }
-    background-image: url(../../assets/home/background-home-desktop.jpg);
     @media (max-width: 480px) {
         background-image: url(../../assets/home/background-home-mobile.jpg);
         display: flex;

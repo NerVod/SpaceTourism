@@ -4,6 +4,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../../assets/destination/background-destination-desktop.jpg);
+    @media (min-width: 769px){
+        min-height: 1024px;
+        min-width: 1200px;
+    }
     @media (max-width: 768px) {
         background-image: url(../../assets/destination/background-destination-tablet.jpg);
         display: flex;
