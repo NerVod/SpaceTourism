@@ -1,6 +1,7 @@
 .container {
-    height: 100vh;
-    width: 100vw;
+    min-height: 100%;
+    height:100vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../../assets/technology/background-technology-tablet.jpg);
@@ -19,6 +20,11 @@
         background-image: url(../../assets/technology/background-technology-mobile.jpg);
 
     }
+
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 .containerComingSoon {
@@ -31,3 +37,100 @@
     align-self: center;
     font-size: 45px;
 }
+
+// .section {
+//     height: 100%;
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     margin: 0 auto;
+// }
+
+// .titleBloc {
+//     margin: 0 auto;
+// }
+
+// .heading {
+//     text-transform: uppercase;
+//     font-family: barlow;
+//     font-size: 16px;
+//     letter-spacing: 2.7px;
+// }
+
+// .heading span {
+//     color: rgb(86,86,86);
+//     margin-right: 8px;
+// }
+
+// .tecPhoto {
+//     display: flex;
+//     height: 200px;
+//     width: 100vw;
+//     overflow: hidden;
+//     object-fit:contain;
+//     margin: 1px auto;
+//     padding:0;
+// }
+
+// .tecPhoto img {
+//     width: 101%;
+// }
+
+// .tecNav {
+//     display: flex;
+//     justify-content: center;
+//     width: 99%;
+    
+// }
+
+// .tecNav ul{
+//     list-style-type: none;
+//     display: flex;
+//     flex-direction: row;
+//     padding: 0;
+// }
+
+// .tecNav li {
+//     margin: 0 15px;
+//     border: 1px solid rgb(86,86,86);
+//     height: 40px;
+//     width: 40px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 50% 50%;
+//     font-size: 18px;
+// }
+
+// .tecBlocText {
+//     // border: 1px solid yellow;
+//     width : 90%;
+//     display : flex;
+//     flex-direction: column;
+//     margin: 0 auto;
+// }
+
+// .terminology {
+//     text-transform: uppercase;
+//     text-align: center;
+//     color: hsl(231,77%, 90%);
+//     font-family: barlow;
+//     font-size: 14px;
+//     letter-spacing: 2.35px;
+// }
+
+// .tecTitre {
+//     text-transform: uppercase;
+//     font-family: bellefair;
+//     margin: 10px auto;
+//     font-size: 24px;
+//     letter-spacing: 2.35px;
+// }
+
+// .tecText {
+//     color: hsl(231,77%, 90%);
+//     font-family: barlow;
+//     letter-spacing: 1.18px;
+//     line-height: 24px;
+//     text-align: center;
+// }
