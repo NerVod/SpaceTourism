@@ -11,7 +11,8 @@ app.use(express.json());
 
 app.use("/warm", userRoutes)
 app.use("/destination", userRoutes);
-app.use("/crew", userRoutes)
+app.use("/crew", userRoutes);
+app.use("/technology", userRoutes);
 
 require("./database/db")(app)
 
