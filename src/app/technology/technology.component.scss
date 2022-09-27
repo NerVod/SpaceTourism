@@ -27,6 +27,7 @@
     margin: 0;
 }
 
+
 .containerComingSoon {
     display: flex;
     justify-content: center;
@@ -38,99 +39,222 @@
     font-size: 45px;
 }
 
-// .section {
-//     height: 100%;
-//     width: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     margin: 0 auto;
-// }
+.section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
 
-// .titleBloc {
-//     margin: 0 auto;
-// }
+.titleBloc {
+    margin: 0 auto;
+    @media ( min-width: 481px) {
+        height: 130px;
+        width: 100%;
+    }
+    @media ( min-width: 768px) {
+        height: 150px;
+        width: 100%;
+        // border: 1px solid blue;
+    }
+}
 
-// .heading {
-//     text-transform: uppercase;
-//     font-family: barlow;
-//     font-size: 16px;
-//     letter-spacing: 2.7px;
-// }
-
-// .heading span {
-//     color: rgb(86,86,86);
-//     margin-right: 8px;
-// }
-
-// .tecPhoto {
-//     display: flex;
-//     height: 200px;
-//     width: 100vw;
-//     overflow: hidden;
-//     object-fit:contain;
-//     margin: 1px auto;
-//     padding:0;
-// }
-
-// .tecPhoto img {
-//     width: 101%;
-// }
-
-// .tecNav {
-//     display: flex;
-//     justify-content: center;
-//     width: 99%;
+.heading {
+    text-transform: uppercase;
+    font-family: barlow;
+    font-size: 16px;
+    letter-spacing: 2.7px;
     
-// }
+    @media ( min-width: 481px) {
+        height: 100%;
+        margin: auto;
+        display: flex;
+    };
+    @media ( min-width: 768px) {
+        padding-left: 100px;
+    }
+}
 
-// .tecNav ul{
-//     list-style-type: none;
-//     display: flex;
-//     flex-direction: row;
-//     padding: 0;
-// }
+.heading p {
+    @media ( min-width: 481px) {
+        margin: auto auto auto 30px;
+        font-size: 22px;   
+    }
+    @media ( min-width: 768px) {
+        font-size: 24px;
+    }
+}
 
-// .tecNav li {
-//     margin: 0 15px;
-//     border: 1px solid rgb(86,86,86);
-//     height: 40px;
-//     width: 40px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     border-radius: 50% 50%;
-//     font-size: 18px;
-// }
+.heading span {
+    color: rgb(86,86,86);
+    margin-right: 8px;
+    font-weight: 900;
 
-// .tecBlocText {
-//     // border: 1px solid yellow;
-//     width : 90%;
-//     display : flex;
-//     flex-direction: column;
-//     margin: 0 auto;
-// }
+}
 
-// .terminology {
-//     text-transform: uppercase;
-//     text-align: center;
-//     color: hsl(231,77%, 90%);
-//     font-family: barlow;
-//     font-size: 14px;
-//     letter-spacing: 2.35px;
-// }
+.contentBloc {
+    @media ( min-width: 769px) {
+        display: flex;
+        // border: 1px solid orange;
+        margin: auto 0;
+        margin-top: 0;
+        overflow: hidden;
+        padding: 0;
+        height: 600px;
+    }
 
-// .tecTitre {
-//     text-transform: uppercase;
-//     font-family: bellefair;
-//     margin: 10px auto;
-//     font-size: 24px;
-//     letter-spacing: 2.35px;
-// }
+    
+}
 
-// .tecText {
-//     color: hsl(231,77%, 90%);
-//     font-family: barlow;
-//     letter-spacing: 1.18px;
-//     line-height: 24px;
-//     text-align: center;
-// }
+@media ( min-width: 769px) {
+    .contentBloc :nth-child(1) {order: 3};
+    .contentBloc :nth-child(2) {order: 1};
+    .contentBloc :nth-child(3) {order: 2};
+    .tecBlocText :nth-child(1) {order: 1};
+}
+
+
+.tecPhoto {
+    display: flex;
+    height: 200px;
+    width: 100vw;
+    overflow: hidden;
+    object-fit:contain;
+    margin: 1px auto;
+    padding:0;
+
+    @media ( min-width: 481px) {
+        height: 330px;
+    }
+    @media ( min-width: 769px) {
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.tecPhoto img {
+    width: 101%;
+}
+
+.tecNav {
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    @media ( min-width: 481px) {
+        margin-top: 30px;
+    }
+    @media ( min-width: 769px) {
+        // border: 1px solid red;
+        margin: 0;
+        width: 25%;
+        justify-content: right;
+        align-items: center;
+    }
+    
+}
+
+.tecNav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    @media ( min-width: 769px) {
+        // border: 1px solid green;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto 30px auto auto;
+        height: 250px;
+    }
+}
+
+.tecNav li {
+    margin: 0 15px;
+    border: 1px solid rgb(86,86,86);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% 50%;
+    font-size: 18px;
+
+    @media ( min-width: 481px) {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.tecBlocText {
+    // border: 1px solid yellow;
+    width : 90%;
+    display : flex;
+    flex-direction: column;
+    margin: 0 auto;
+    @media ( min-width: 769px) {
+        margin: auto;
+
+    }
+    @media ( min-width: 769px) {
+        text-align: left;
+        height: 300px;
+        width: 1000px;
+    }
+}
+
+.terminology {
+    text-transform: uppercase;
+    text-align: center;
+    color: hsl(231,77%, 90%);
+    font-family: barlow;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    @media ( min-width: 481px) {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    @media ( min-width: 769px) {
+        text-align: left;
+        // border: 1px solid pink;
+    }
+}
+
+.tecTitre {
+    text-transform: uppercase;
+    font-family: bellefair;
+    margin: 10px auto;
+    font-size: 24px;
+    letter-spacing: 2.35px;
+    @media ( min-width: 481px) {
+        margin-top: 20px;
+        font-size: 36px;
+        letter-spacing: 0.56px;
+    }
+    @media ( min-width: 769px) {
+        width: 100%;
+        text-align: left;
+        font-size: 42px;
+        // border: 1px solid pink;
+    }
+}
+
+.tecText {
+    color: hsl(231,77%, 90%);
+    font-family: barlow;
+    letter-spacing: 1.18px;
+    line-height: 24px;
+    text-align: center;
+    @media ( min-width: 481px) {
+        width: 60%;
+        margin: 0 auto;
+        line-height: 28px;
+
+    }
+    @media ( min-width: 769px) {
+        text-align: left;
+        width: 75%;
+        margin: 0 auto auto 0;
+        font-size: 20px;
+        // border: 1px solid pink;
+    }
+}
