@@ -19,24 +19,25 @@
         <div class="contentBloc">
 
             <div class="tecPhoto">
-                <img src="../../assets/technology/image-launch-vehicle-portrait.jpg">
+                <img *ngIf="getScreenWidth <= 768" src="{{dataTech$.images.landscape}}" alt="image tech en landscape">
+                <img *ngIf="getScreenWidth > 769" src="{{dataTech$.images.portrait}}" alt="image Tech en protrait">
+                <!-- <img src="../../assets/technology/image-launch-vehicle-landscape.jpg"> -->
             </div>
 
             <div class="tecNav">
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
+                    <li (mouseover)="this.survol1=true" (mouseout)="this.survol1=false" [ngClass]="{survol: survol1, pickedTech: select1}" (click)="getLaunch()">1</li>
+                    <li (mouseover)="this.survol2=true" (mouseout)="this.survol2=false" [ngClass]="{survol: survol2, pickedTech: select2}" (click)="getSpacePort()">2</li>
+                    <li (mouseover)="this.survol3=true" (mouseout)="this.survol3=false" [ngClass]="{survol: survol3, pickedTech: select3}" (click)="getCapsule()">3</li>
                 </ul>
             </div>
 
             <div class="tecBlocText">
                 <div class="terminology">The terminology ...</div>
-                <div class="tecTitre">Launch Vehicule</div>
-                <div class="tecText"><p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-                    payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-                    WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-                    it's quite an awe-inspiring sight on the launch pad!</p></div>
+                <div class="tecTitre">{{dataTech$.name}}</div>
+                <div class="tecText"><p>
+                    {{dataTech$.description}}
+                </p></div>
             </div>
 
 

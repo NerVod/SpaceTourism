@@ -112,6 +112,8 @@
     .contentBloc :nth-child(2) {order: 1};
     .contentBloc :nth-child(3) {order: 2};
     .tecBlocText :nth-child(1) {order: 1};
+
+    .tecNav ul :nth-child(1) {order: 1};
 }
 
 
@@ -257,4 +259,15 @@
         font-size: 20px;
         // border: 1px solid pink;
     }
+}
+
+.survol {
+    cursor: pointer;
+    border-color: aliceblue !important;
+
+}
+
+.pickedTech {
+    color: hsl(230,35%, 7%);
+    background-color: hsl(0,0%, 100%);
 }
