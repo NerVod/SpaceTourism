@@ -34,6 +34,7 @@
     flex-direction: column;
     @media (max-width: 480px) {
         align-items: center;
+        padding-bottom: 0;
     }
     @media (min-width: 769px) {
         min-height: 800px;
@@ -73,8 +74,8 @@
     margin-bottom: 30px;
     @media ( max-width: 480px) { 
         width: 70%;
-        margin-top: 15px;
-        margin-bottom: 15px;        
+        margin-top: 5px;
+        margin-bottom: 0px;        
     }
     @media ( max-width: 768px) { 
         margin-bottom: 50px;      
@@ -142,6 +143,9 @@ li {
         justify-items: flex-start;
         min-height:700px;
         height: 85vh;
+    }
+    @media (max-width: 480px) {
+        margin-top: -35px;
     }
 }
 .planetName {
