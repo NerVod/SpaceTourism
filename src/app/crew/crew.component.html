@@ -1,37 +1,33 @@
 <div class="container">
+    
     <app-nav></app-nav>
 
-<!-- <div class="containerComingSoon">
-    <div class="comingSoon">
-        Coming Soon ...
-    </div>
-</div> -->
 
-<div class="desktopContainer">
-    <div class="crewContainer">
-        <div class="headingBloc">
-            <div class="heading"><p><span class="number">02</span> meet your crew</p></div>
+    <div class="desktopContainer">
+        <div class="crewContainer">
+            <div class="headingBloc">
+                <div class="heading"><p><span class="number">02</span> meet your crew</p></div>
+            </div>
+            <div class="imageCrew" *ngIf="getScreenWidth <= 768">
+                <img src="{{dataCrew$.images}}" alt="image crew">
+                <div class="dash"></div>
+            </div>
+            <div class="bulletNav">
+                <div class="bullet" (mouseenter)="this.survol1= true" (mouseleave)="this.survol1 = false" [ngClass]="{bulletHover: survol1, bulletSelected: select1 }" (click)="getCommander()"></div>
+                <div class="bullet" (mouseenter)="this.survol2= true" (mouseleave)="this.survol2 = false" [ngClass]="{bulletHover: survol2, bulletSelected: select2}" (click)="getSpecialist()"></div>
+                <div class="bullet" (mouseenter)="this.survol3= true" (mouseleave)="this.survol3 = false" [ngClass]="{bulletHover: survol3, bulletSelected: select3 }" (click)="getPilot()"></div>
+                <div class="bullet" (mouseenter)="this.survol4= true" (mouseleave)="this.survol4 = false" [ngClass]="{bulletHover: survol4, bulletSelected: select4}" (click)="getEngeneer()"></div>
+            </div>
+            <div class="blocInfo">
+                <div class="role">{{dataCrew$.role}}</div>
+                <div class="name">{{dataCrew$.name}}</div>
+                <div class="bio">{{dataCrew$.bio}}</div>
+            </div>
         </div>
-        <div class="imageCrew" *ngIf="getScreenWidth <= 768">
+        <div class="desktopPhoto" *ngIf="getScreenWidth > 768">
             <img src="{{dataCrew$.images}}" alt="image crew">
-            <div class="dash"></div>
-        </div>
-        <div class="bulletNav">
-            <div class="bullet" (mouseenter)="this.survol1= true" (mouseleave)="this.survol1 = false" [ngClass]="{bulletHover: survol1, bulletSelected: select1 }" (click)="getCommander()"></div>
-            <div class="bullet" (mouseenter)="this.survol2= true" (mouseleave)="this.survol2 = false" [ngClass]="{bulletHover: survol2, bulletSelected: select2}" (click)="getSpecialist()"></div>
-            <div class="bullet" (mouseenter)="this.survol3= true" (mouseleave)="this.survol3 = false" [ngClass]="{bulletHover: survol3, bulletSelected: select3 }" (click)="getPilot()"></div>
-            <div class="bullet" (mouseenter)="this.survol4= true" (mouseleave)="this.survol4 = false" [ngClass]="{bulletHover: survol4, bulletSelected: select4}" (click)="getEngeneer()"></div>
-        </div>
-        <div class="blocInfo">
-            <div class="role">{{dataCrew$.role}}</div>
-            <div class="name">{{dataCrew$.name}}</div>
-            <div class="bio">{{dataCrew$.bio}}</div>
         </div>
     </div>
-    <div class="desktopPhoto" *ngIf="getScreenWidth > 768">
-        <img src="{{dataCrew$.images}}" alt="image crew">
-    </div>
-</div>
 
 
 

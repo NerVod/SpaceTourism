@@ -7,6 +7,8 @@
     @media (min-width: 769px){
         min-height: 974px;
         min-width: 1200px;
+        display: flex;
+        flex-direction: column;
     }
     @media (max-width: 768px) {
         background-image: url(../../assets/crew/background-crew-tablet.jpg);
@@ -257,19 +259,21 @@ img {
 
 .desktopContainer {
     @media (min-width: 769px) {
-        margin-top: 20px;
         display: flex;
         min-height: 500px;
+        margin: auto;
     }
 }
 
 .desktopPhoto {
     @media( min-width: 769px) {
-        width: 45%;
+        min-width: 45%;
+        width: 700px;
         display: flex;
         justify-content: center;
         align-content: center;
-        
+        overflow: hidden;
+        object-fit: contain;
     }
 }
 
