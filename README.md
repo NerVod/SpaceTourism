@@ -1,5 +1,14 @@
 # SpaceTourism
 
+Angular Project from Front-end Mentor
+Back-end Node JS to update content
+
+![Coded by NerVod](Capture1.JPG)
+![Coded by NerVod](Capture2.JPG)
+![Coded by NerVod](Capture3.JPG)
+![Coded by NerVod](Capture4.JPG)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
 ## Development server
