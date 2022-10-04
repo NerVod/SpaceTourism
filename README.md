@@ -7,6 +7,9 @@ Back-end Node JS to update content
 ![Coded by NerVod](Capture2.JPG)
 ![Coded by NerVod](Capture3.JPG)
 ![Coded by NerVod](Capture4.JPG)
+![Coded by NerVod](Capture5.JPG)
+![Coded by NerVod](Capture6.JPG)
+![Coded by NerVod](Capture7.JPG)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
